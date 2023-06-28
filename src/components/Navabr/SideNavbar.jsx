@@ -15,7 +15,13 @@ function SideNavbar() {
   return (
     <div>
       <div
-        style={{ display: "flex", height: "100vh", overflow: "scroll initial" }}
+        style={{
+          display: "flex",
+          height: "100vh",
+          overflow: "scroll initial",
+          position: "fixed",
+          top: 0,
+        }}
       >
         <CDBSidebar textColor="#fff" backgroundColor="#333">
           <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
@@ -73,13 +79,11 @@ function SideNavbar() {
               </NavLink>
             </CDBSidebarMenu>
           </CDBSidebarContent>
-          <CDBSidebarFooter >
-          <CDBSidebarMenuItem icon="plus">More</CDBSidebarMenuItem>
-
+          <CDBSidebarFooter>
+            <CDBSidebarMenuItem icon="plus">More</CDBSidebarMenuItem>
           </CDBSidebarFooter>
         </CDBSidebar>
       </div>
-      );
     </div>
   );
 }

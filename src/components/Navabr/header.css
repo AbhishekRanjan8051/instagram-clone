@@ -1,0 +1,22 @@
+.status {
+  display: flex;
+  width: 200px;
+  /* margin: auto; */
+  gap: 15px;
+  margin: 100px 0 0 400px;
+}
+.statusimage {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+.statusimage > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid rgb(157, 49, 49);
+ 
+}
